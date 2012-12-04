@@ -48,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		594CE8D9166E90E2007332E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		594CE8F5166EA70C007332E4 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		594CE8F6166EA70C007332E4 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D042C2D815AF249300A88888 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		D042C2D915AF249300A88888 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		D042C2DA15AF249300A88888 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -117,6 +119,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		594CE8F2166EA689007332E4 /* MagicRecord */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MagicRecord;
+			sourceTree = "<group>";
+		};
+		594CE8F4166EA692007332E4 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				594CE8F5166EA70C007332E4 /* Reachability.h */,
+				594CE8F6166EA70C007332E4 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 		D0716DDE159A2F82001988A9 /* PullToRefreshView */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +194,8 @@
 				D07A4A4F1594FED7003E4DCE /* TBTodoItem.m */,
 				D07A4A5215950A72003E4DCE /* TBTodoItemCell.h */,
 				D07A4A5315950A73003E4DCE /* TBTodoItemCell.m */,
+				594CE8F4166EA692007332E4 /* Reachability */,
+				594CE8F2166EA689007332E4 /* MagicRecord */,
 				D0716DDE159A2F82001988A9 /* PullToRefreshView */,
 				D07A4A071594D3AA003E4DCE /* Supporting Files */,
 			);
