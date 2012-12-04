@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		594CE8DA166E90E2007332E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 594CE8D9166E90E2007332E4 /* Default-568h@2x.png */; };
 		D042C2E315AF24CD00A88888 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D042C2D815AF249300A88888 /* Icon-Small.png */; };
 		D042C2E415AF24CD00A88888 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D042C2D915AF249300A88888 /* Icon-Small@2x.png */; };
 		D042C2E515AF24CD00A88888 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D042C2DA15AF249300A88888 /* Icon.png */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		594CE8D9166E90E2007332E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D042C2D815AF249300A88888 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		D042C2D915AF249300A88888 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		D042C2DA15AF249300A88888 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		D07A49F11594D3AA003E4DCE = {
 			isa = PBXGroup;
 			children = (
+				594CE8D9166E90E2007332E4 /* Default-568h@2x.png */,
 				D07A4A061594D3AA003E4DCE /* Todoly */,
 				D07A49FF1594D3AA003E4DCE /* Frameworks */,
 				D07A49FD1594D3AA003E4DCE /* Products */,
@@ -279,6 +282,7 @@
 				D042C2E515AF24CD00A88888 /* Icon.png in Resources */,
 				D042C2E615AF24CD00A88888 /* Icon@2x.png in Resources */,
 				D042C2E815AF25B300A88888 /* iTunesArtwork@2x in Resources */,
+				594CE8DA166E90E2007332E4 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
