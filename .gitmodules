@@ -1,6 +1,8 @@
 [submodule "Todoly/PullToRefreshView"]
 	path = Todoly/PullToRefreshView
 	url = git://github.com/zman0900/PullToRefreshView.git
+	ignore = dirty
 [submodule "PullToRefresh"]
 	path = PullToRefresh
 	url = https://github.com/dhoerl/PullToRefresh.git
+	ignore = dirty
