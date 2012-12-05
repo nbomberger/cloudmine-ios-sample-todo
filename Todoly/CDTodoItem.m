@@ -11,9 +11,9 @@
 
 @implementation CDTodoItem
 
-@dynamic text;
 @dynamic deadline;
 @dynamic done;
 @dynamic priority;
+@dynamic text;
 
 @end

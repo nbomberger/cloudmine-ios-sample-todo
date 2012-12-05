@@ -10,7 +10,7 @@
 #import <CloudMine/CloudMine.h>
 #import "LocalStorage.h"
 #import "TBTodoItem.h"
-#import "TBTodoItem.h"
+#import "CDTodoItem.h"
 
 
 @implementation LocalStorage
@@ -21,10 +21,10 @@
     NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
     // Set current date
     // Set get all packages stored in local sql db matching the barcode
-    NSArray *todoItems = [TBTodoItem MR_findByAttribute:@"objectId" withValue:tbTodoItem.objectId];
+    NSArray *todoItems = [CDTodoItem MR_findByAttribute:@"objectid" withValue:tbTodoItem.text];
     // Create a new CDPackage in the current thread context (only if its not in the db)
     CDTodoItem *cdTodoItem;
-    if ([packages count] == 0 ) {
+    if ([todoItems count] == 0 ) {
         cdTodoItem = [CDTodoItem MR_createInContext:localContext];
         // We just set this to 0 since it is not in the db yet and we might not be able to reach Cloudmine
         

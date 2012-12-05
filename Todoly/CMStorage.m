@@ -18,7 +18,7 @@
 {
    CMStore *store = [CMStore defaultStore];
     __block TBTodoItem *tItem = todoItem;
-    NSString *query = [NSString stringWithFormat:@"[__class__ = \"TBTodoItem\]"];
+    NSString *query = [NSString stringWithFormat:@"[__class__ = \"TBTodoItem]\""];
     [store searchObjects:query
        additionalOptions:nil
                 callback:^(CMObjectFetchResponse *response) {

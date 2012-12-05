@@ -26,10 +26,12 @@
     // Add observer in order to notify UI with network status.
     [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
     
-        // Start notification
+    // Start notification
     [reach startNotifier];
-    
-    return YES;
+   
+    // Set up CoreData (MagicRecord)
+    [MagicalRecord setupCoreDataStack];
+     return YES;
 }
 
 

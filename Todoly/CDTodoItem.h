@@ -12,9 +12,9 @@
 
 @interface CDTodoItem : NSManagedObject
 
-@property (nonatomic, retain) NSString * text;
 @property (nonatomic, retain) NSDate * deadline;
 @property (nonatomic, retain) NSNumber * done;
 @property (nonatomic, retain) NSNumber * priority;
+@property (nonatomic, retain) NSString * text;
 
 @end
