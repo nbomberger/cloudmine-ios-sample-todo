@@ -6,3 +6,6 @@
 	path = PullToRefresh
 	url = https://github.com/dhoerl/PullToRefresh.git
 	ignore = dirty
+[submodule "MagicalRecord"]
+	path = MagicalRecord
+	url = https://github.com/nbomberger/MagicalRecord.git
