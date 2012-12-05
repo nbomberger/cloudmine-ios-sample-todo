@@ -77,6 +77,7 @@
     
     // Make the first field, the username field, active
     [_usernameField becomeFirstResponder];
+    
 }
 
 - (void)viewDidDisappear:(BOOL)animated {

@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5940FC68166F582400E3DB9D /* CustomStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 594CE8FD166EAA50007332E4 /* CustomStatusBar.m */; };
+		5940FC6C166F630D00E3DB9D /* UIViewController+NetworkStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5940FC6B166F630D00E3DB9D /* UIViewController+NetworkStatus.m */; };
 		594CE8DA166E90E2007332E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 594CE8D9166E90E2007332E4 /* Default-568h@2x.png */; };
 		594CE900166EAC50007332E4 /* statusBarBackgroundRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 594CE8FF166EAC50007332E4 /* statusBarBackgroundRed.png */; };
 		594CE907166EB429007332E4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 594CE906166EB1C4007332E4 /* Reachability.m */; };
-		594CE90B166ED113007332E4 /* TBAppDelegate+Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 594CE90A166ED113007332E4 /* TBAppDelegate+Reachability.m */; };
 		59A229CE166EF5E900F00582 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A22996166EF5E900F00582 /* MagicalImportFunctions.m */; };
 		59A229CF166EF5E900F00582 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A22998166EF5E900F00582 /* NSAttributeDescription+MagicalDataImport.m */; };
 		59A229D0166EF5E900F00582 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A2299A166EF5E900F00582 /* NSEntityDescription+MagicalDataImport.m */; };
@@ -82,14 +83,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5940FC6A166F630D00E3DB9D /* UIViewController+NetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NetworkStatus.h"; sourceTree = "<group>"; };
+		5940FC6B166F630D00E3DB9D /* UIViewController+NetworkStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NetworkStatus.m"; sourceTree = "<group>"; };
 		594CE8D9166E90E2007332E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		594CE8FC166EAA50007332E4 /* CustomStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomStatusBar.h; sourceTree = "<group>"; };
 		594CE8FD166EAA50007332E4 /* CustomStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomStatusBar.m; sourceTree = "<group>"; };
 		594CE8FF166EAC50007332E4 /* statusBarBackgroundRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusBarBackgroundRed.png; sourceTree = "<group>"; };
 		594CE905166EB1C4007332E4 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		594CE906166EB1C4007332E4 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		594CE909166ED113007332E4 /* TBAppDelegate+Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBAppDelegate+Reachability.h"; sourceTree = "<group>"; };
-		594CE90A166ED113007332E4 /* TBAppDelegate+Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBAppDelegate+Reachability.m"; sourceTree = "<group>"; };
 		59A22995166EF5E900F00582 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		59A22996166EF5E900F00582 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		59A22997166EF5E900F00582 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -256,10 +257,10 @@
 		594CE908166ED052007332E4 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				594CE909166ED113007332E4 /* TBAppDelegate+Reachability.h */,
-				594CE90A166ED113007332E4 /* TBAppDelegate+Reachability.m */,
 				59AEAC38166EE1110065241F /* TBTodoItem+LocalStorage.h */,
 				59AEAC39166EE1110065241F /* TBTodoItem+LocalStorage.m */,
+				5940FC6A166F630D00E3DB9D /* UIViewController+NetworkStatus.h */,
+				5940FC6B166F630D00E3DB9D /* UIViewController+NetworkStatus.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -556,6 +557,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5940FC68166F582400E3DB9D /* CustomStatusBar.m in Sources */,
 				594CE907166EB429007332E4 /* Reachability.m in Sources */,
 				D07A4A0D1594D3AA003E4DCE /* main.m in Sources */,
 				D07A4A111594D3AA003E4DCE /* TBAppDelegate.m in Sources */,
@@ -565,7 +567,6 @@
 				D07A4A5115950769003E4DCE /* TBTodoItem.m in Sources */,
 				D07A4A5415950A73003E4DCE /* TBTodoItemCell.m in Sources */,
 				D0716DDD159A2F79001988A9 /* PullToRefreshView.m in Sources */,
-				594CE90B166ED113007332E4 /* TBAppDelegate+Reachability.m in Sources */,
 				59AEAC36166ED9170065241F /* LocalStorage.m in Sources */,
 				59AEAC37166ED9170065241F /* CMStorage.m in Sources */,
 				59AEAC3A166EE1110065241F /* TBTodoItem+LocalStorage.m in Sources */,
@@ -597,6 +598,7 @@
 				59A229E6166EF5E900F00582 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				59A229E7166EF5E900F00582 /* MagicalRecord.m in Sources */,
 				59CB75BF166EFE6300553BCC /* CDTodoItem.m in Sources */,
+				5940FC6C166F630D00E3DB9D /* UIViewController+NetworkStatus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,7 +632,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nathaniel Bomberger (Q9EZ95B89W)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -645,6 +647,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B23075A-57F9-4F64-8A6C-B0F54EB33D35";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -657,7 +660,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nathaniel Bomberger (Q9EZ95B89W)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -666,6 +669,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B23075A-57F9-4F64-8A6C-B0F54EB33D35";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

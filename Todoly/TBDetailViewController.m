@@ -64,6 +64,7 @@
     if ([_delegate respondsToSelector:@selector(detailController:didModifyItem:)])
         [_delegate detailController:self didModifyItem:self.item];
     
+    // TODO: Logic to save here?  or do we decouple it?
     // Update the item in CloudMine's object store
     [_item save:^(CMObjectUploadResponse *response) {
         // If the item was *not* successfully updated, fix the mess
