@@ -78,10 +78,13 @@
             
             // Alert the user
             NSString *message = @"The item could not be updated.";
-            if (response.error)
+            if (response.error) {
+                [self checkNetworkStatus];
                 message = [response.error localizedDescription];
-            UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:message delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
-            [errorAlert show];
+            }
+            // TODO: CHANGES ADDED
+//            UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:message delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+//            [errorAlert show];
         }
     }];
 }

@@ -18,6 +18,7 @@
 
 - (void)login;
 - (void)createAccountAndLogin;
+
 @end
 
 @implementation TBLoginViewController
@@ -31,7 +32,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
+    [self checkNetworkStatus];
+ 
     // Prevents retain cycle
     __block TBLoginViewController *unretainedSelf = self;
     

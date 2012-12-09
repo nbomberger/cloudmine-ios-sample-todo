@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5940FC68166F582400E3DB9D /* CustomStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 594CE8FD166EAA50007332E4 /* CustomStatusBar.m */; };
-		5940FC6C166F630D00E3DB9D /* UIViewController+NetworkStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5940FC6B166F630D00E3DB9D /* UIViewController+NetworkStatus.m */; };
+		5940FC7B1670080A00E3DB9D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5940FC7A1670080A00E3DB9D /* MBProgressHUD.m */; };
+		5940FC811670276F00E3DB9D /* UIViewController+Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 5940FC801670276F00E3DB9D /* UIViewController+Status.m */; };
 		594CE8DA166E90E2007332E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 594CE8D9166E90E2007332E4 /* Default-568h@2x.png */; };
 		594CE900166EAC50007332E4 /* statusBarBackgroundRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 594CE8FF166EAC50007332E4 /* statusBarBackgroundRed.png */; };
 		594CE907166EB429007332E4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 594CE906166EB1C4007332E4 /* Reachability.m */; };
+		599D543316745B0800C2925F /* TBAbstractStatusFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 599D543216745B0800C2925F /* TBAbstractStatusFactory.m */; };
+		599D543716745D1100C2925F /* MBProgressStatusFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 599D543616745D1100C2925F /* MBProgressStatusFactory.m */; };
 		59A229CE166EF5E900F00582 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A22996166EF5E900F00582 /* MagicalImportFunctions.m */; };
 		59A229CF166EF5E900F00582 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A22998166EF5E900F00582 /* NSAttributeDescription+MagicalDataImport.m */; };
 		59A229D0166EF5E900F00582 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A2299A166EF5E900F00582 /* NSEntityDescription+MagicalDataImport.m */; };
@@ -83,14 +85,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5940FC6A166F630D00E3DB9D /* UIViewController+NetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NetworkStatus.h"; sourceTree = "<group>"; };
-		5940FC6B166F630D00E3DB9D /* UIViewController+NetworkStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NetworkStatus.m"; sourceTree = "<group>"; };
+		5940FC791670080900E3DB9D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../MBProgressHUD.h; sourceTree = "<group>"; };
+		5940FC7A1670080A00E3DB9D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../MBProgressHUD.m; sourceTree = "<group>"; };
+		5940FC7D167015D500E3DB9D /* TBStatusViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBStatusViewProtocol.h; sourceTree = "<group>"; };
+		5940FC7F1670276F00E3DB9D /* UIViewController+Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Status.h"; sourceTree = "<group>"; };
+		5940FC801670276F00E3DB9D /* UIViewController+Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Status.m"; sourceTree = "<group>"; };
+		5940FC8216703DB100E3DB9D /* TBNetworkStatusProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBNetworkStatusProtocol.h; sourceTree = "<group>"; };
 		594CE8D9166E90E2007332E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		594CE8FC166EAA50007332E4 /* CustomStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomStatusBar.h; sourceTree = "<group>"; };
-		594CE8FD166EAA50007332E4 /* CustomStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomStatusBar.m; sourceTree = "<group>"; };
 		594CE8FF166EAC50007332E4 /* statusBarBackgroundRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusBarBackgroundRed.png; sourceTree = "<group>"; };
 		594CE905166EB1C4007332E4 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		594CE906166EB1C4007332E4 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		599D543116745B0800C2925F /* TBAbstractStatusFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBAbstractStatusFactory.h; sourceTree = "<group>"; };
+		599D543216745B0800C2925F /* TBAbstractStatusFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBAbstractStatusFactory.m; sourceTree = "<group>"; };
+		599D543516745D1100C2925F /* MBProgressStatusFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressStatusFactory.h; sourceTree = "<group>"; };
+		599D543616745D1100C2925F /* MBProgressStatusFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressStatusFactory.m; sourceTree = "<group>"; };
 		59A22995166EF5E900F00582 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		59A22996166EF5E900F00582 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		59A22997166EF5E900F00582 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -226,6 +234,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5940FC7C1670081100E3DB9D /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5940FC791670080900E3DB9D /* MBProgressHUD.h */,
+				5940FC7A1670080A00E3DB9D /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		594CE8F2166EA689007332E4 /* MagicRecord */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,8 +265,12 @@
 		594CE8F7166EAA0A007332E4 /* NetworkStatusBar */ = {
 			isa = PBXGroup;
 			children = (
-				594CE8FC166EAA50007332E4 /* CustomStatusBar.h */,
-				594CE8FD166EAA50007332E4 /* CustomStatusBar.m */,
+				5940FC8216703DB100E3DB9D /* TBNetworkStatusProtocol.h */,
+				5940FC7D167015D500E3DB9D /* TBStatusViewProtocol.h */,
+				599D543516745D1100C2925F /* MBProgressStatusFactory.h */,
+				599D543616745D1100C2925F /* MBProgressStatusFactory.m */,
+				599D543116745B0800C2925F /* TBAbstractStatusFactory.h */,
+				599D543216745B0800C2925F /* TBAbstractStatusFactory.m */,
 			);
 			name = NetworkStatusBar;
 			sourceTree = "<group>";
@@ -259,8 +280,8 @@
 			children = (
 				59AEAC38166EE1110065241F /* TBTodoItem+LocalStorage.h */,
 				59AEAC39166EE1110065241F /* TBTodoItem+LocalStorage.m */,
-				5940FC6A166F630D00E3DB9D /* UIViewController+NetworkStatus.h */,
-				5940FC6B166F630D00E3DB9D /* UIViewController+NetworkStatus.m */,
+				5940FC7F1670276F00E3DB9D /* UIViewController+Status.h */,
+				5940FC801670276F00E3DB9D /* UIViewController+Status.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -436,6 +457,7 @@
 				594CE908166ED052007332E4 /* Category */,
 				594CE8F7166EAA0A007332E4 /* NetworkStatusBar */,
 				594CE8F4166EA692007332E4 /* Reachability */,
+				5940FC7C1670081100E3DB9D /* MBProgressHUD */,
 				594CE8F2166EA689007332E4 /* MagicRecord */,
 				59AEAC2F166ED8C30065241F /* Storage */,
 				D0716DDE159A2F82001988A9 /* PullToRefreshView */,
@@ -557,7 +579,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5940FC68166F582400E3DB9D /* CustomStatusBar.m in Sources */,
 				594CE907166EB429007332E4 /* Reachability.m in Sources */,
 				D07A4A0D1594D3AA003E4DCE /* main.m in Sources */,
 				D07A4A111594D3AA003E4DCE /* TBAppDelegate.m in Sources */,
@@ -598,7 +619,10 @@
 				59A229E6166EF5E900F00582 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				59A229E7166EF5E900F00582 /* MagicalRecord.m in Sources */,
 				59CB75BF166EFE6300553BCC /* CDTodoItem.m in Sources */,
-				5940FC6C166F630D00E3DB9D /* UIViewController+NetworkStatus.m in Sources */,
+				5940FC7B1670080A00E3DB9D /* MBProgressHUD.m in Sources */,
+				5940FC811670276F00E3DB9D /* UIViewController+Status.m in Sources */,
+				599D543316745B0800C2925F /* TBAbstractStatusFactory.m in Sources */,
+				599D543716745D1100C2925F /* MBProgressStatusFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

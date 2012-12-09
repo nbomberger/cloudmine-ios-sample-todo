@@ -12,7 +12,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "CoreData+MagicalRecord.h"
-    #import "UIViewController+NetworkStatus.h"
-    #import "CustomStatusBar.h"
+    #import "UIViewController+Status.h"
+    #import "MBProgressHUD.h"
     #import "Reachability.h"
 #endif

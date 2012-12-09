@@ -31,7 +31,7 @@ typedef void (^ TodoItemResponseBlock)(TBTodoItem*, Status, NSString *);
 /**
     Protocol delcaration for storage mechanism for TodolyRefactored
  */
-@protocol StorageProtocol <NSObject>
+@protocol StorageProtocol <NSObject>;
 /**
     Method saves todo item to either server, or local storage.
     @param todoItem Cloudmine object

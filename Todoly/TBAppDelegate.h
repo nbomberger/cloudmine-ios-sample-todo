@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "StorageProtocol.h"
 
-@class CustomStatusBar, Reachability;
+@class Reachability;
 
 @interface TBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) Reachability *reachability;
 /**
  This property allows us to cache network requests locally.
  */
@@ -23,12 +22,10 @@
  This property allows us to store datat on CloudMine (or any remote protocol);
  */
 @property (strong, nonatomic) NSObject<StorageProtocol> * remoteStorage;
-/**
- This holds the storage protocol object.  This allows the user to return an instance of the current storage protocol.
- */
-- (NSObject<StorageProtocol> *) storage;
-/**
- Helper method to detect a network connection.
- */
--(BOOL)hasNetworkConnection;
+///**
+// This holds the storage protocol object.  This allows the user to return an instance of the current storage protocol.
+// */
+//- (NSObject<StorageProtocol> *) storage;
+//
+
 @end

@@ -28,6 +28,8 @@
 - (void)loadView {
     [super loadView];
     
+    [self checkNetworkStatus];
+    
     // Load the pull-to-refresh view
     _pull = [[PullToRefreshView alloc] initWithScrollView:self.tableView];
     [_pull setDelegate:self];
@@ -36,7 +38,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Set up the buttons on the navigation bar
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewItem:)];
@@ -122,8 +123,10 @@
                         callback:^(CMObjectFetchResponse *response) {
                             // If an error occurred, alert the user!
                             if (response.error) {
-                                UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:[response.error localizedDescription] delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
-                                [errorAlert show];
+                                // TODO: CHANGE ADDED
+//                                UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:[response.error localizedDescription] delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+//                                [errorAlert show];
+                                [self checkNetworkStatus];
                             }
                             
                             // Replace local items with those loaded from the server

@@ -10,7 +10,6 @@
 #import <CloudMine/CloudMine.h>
 
 #import "TBAppDelegate.h"
-
 @implementation TBAppDelegate
 
 
@@ -20,46 +19,8 @@
     credentials.appIdentifier = @"ec2c161f7a4b485981230a7b0a28f3fe";
     credentials.appSecret = @"e1767a2e93824f219d75969ee64cbff1";
    
-    //[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(reachabilityChanged:) name:kReachabilityChangedNotification object: nil];
-    Reachability *reach =   [Reachability reachabilityWithHostname:@"www.google.com"];
-    CustomStatusBar *csb = [[CustomStatusBar alloc] initWithFrame:CGRectZero];;
-    reach.reachableBlock = ^(Reachability * reachability)
-    {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [csb hide];
-        });
-    };
-    reach.unreachableBlock = ^(Reachability * reachability)
-    {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [csb showWithStatusMessage: [reachability currentReachabilityString]];
-        });
-    };
-    [reach startNotifier];
-    
     return YES;
     
-}
-
-- (NSObject<StorageProtocol> *) storage {
-    if([self hasNetworkConnection]) {
-        return _remoteStorage;
-    }
-    else {
-        return _localStorage;
-    }
-}
-
--(BOOL)hasNetworkConnection
-{
-	Reachability* curReach = [Reachability reachabilityWithHostname:@"cloudmine.me"];
-	NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
-    NetworkStatus netStatus = [curReach currentReachabilityStatus];
-    if (netStatus == NotReachable) {
-        return NO;
-    } else {
-        return YES;
-    }
 }
 - (void)applicationWillResignActive:(UIApplication *)application
 {
