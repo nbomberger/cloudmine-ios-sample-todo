@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5940FC7B1670080A00E3DB9D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5940FC7A1670080A00E3DB9D /* MBProgressHUD.m */; };
 		5940FC811670276F00E3DB9D /* UIViewController+Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 5940FC801670276F00E3DB9D /* UIViewController+Status.m */; };
 		594CE8DA166E90E2007332E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 594CE8D9166E90E2007332E4 /* Default-568h@2x.png */; };
 		594CE900166EAC50007332E4 /* statusBarBackgroundRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 594CE8FF166EAC50007332E4 /* statusBarBackgroundRed.png */; };
 		594CE907166EB429007332E4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 594CE906166EB1C4007332E4 /* Reachability.m */; };
 		599D543316745B0800C2925F /* TBAbstractStatusFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 599D543216745B0800C2925F /* TBAbstractStatusFactory.m */; };
 		599D543716745D1100C2925F /* MBProgressStatusFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 599D543616745D1100C2925F /* MBProgressStatusFactory.m */; };
+		599D54411675262000C2925F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 599D54401675262000C2925F /* MBProgressHUD.m */; };
 		59A229CE166EF5E900F00582 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A22996166EF5E900F00582 /* MagicalImportFunctions.m */; };
 		59A229CF166EF5E900F00582 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A22998166EF5E900F00582 /* NSAttributeDescription+MagicalDataImport.m */; };
 		59A229D0166EF5E900F00582 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A2299A166EF5E900F00582 /* NSEntityDescription+MagicalDataImport.m */; };
@@ -85,8 +85,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5940FC791670080900E3DB9D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../MBProgressHUD.h; sourceTree = "<group>"; };
-		5940FC7A1670080A00E3DB9D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../MBProgressHUD.m; sourceTree = "<group>"; };
 		5940FC7D167015D500E3DB9D /* TBStatusViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBStatusViewProtocol.h; sourceTree = "<group>"; };
 		5940FC7F1670276F00E3DB9D /* UIViewController+Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Status.h"; sourceTree = "<group>"; };
 		5940FC801670276F00E3DB9D /* UIViewController+Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Status.m"; sourceTree = "<group>"; };
@@ -99,6 +97,8 @@
 		599D543216745B0800C2925F /* TBAbstractStatusFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBAbstractStatusFactory.m; sourceTree = "<group>"; };
 		599D543516745D1100C2925F /* MBProgressStatusFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressStatusFactory.h; sourceTree = "<group>"; };
 		599D543616745D1100C2925F /* MBProgressStatusFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressStatusFactory.m; sourceTree = "<group>"; };
+		599D543F1675262000C2925F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		599D54401675262000C2925F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		59A22995166EF5E900F00582 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		59A22996166EF5E900F00582 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		59A22997166EF5E900F00582 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -237,8 +237,8 @@
 		5940FC7C1670081100E3DB9D /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				5940FC791670080900E3DB9D /* MBProgressHUD.h */,
-				5940FC7A1670080A00E3DB9D /* MBProgressHUD.m */,
+				599D543F1675262000C2925F /* MBProgressHUD.h */,
+				599D54401675262000C2925F /* MBProgressHUD.m */,
 			);
 			name = MBProgressHUD;
 			sourceTree = "<group>";
@@ -619,10 +619,10 @@
 				59A229E6166EF5E900F00582 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				59A229E7166EF5E900F00582 /* MagicalRecord.m in Sources */,
 				59CB75BF166EFE6300553BCC /* CDTodoItem.m in Sources */,
-				5940FC7B1670080A00E3DB9D /* MBProgressHUD.m in Sources */,
 				5940FC811670276F00E3DB9D /* UIViewController+Status.m in Sources */,
 				599D543316745B0800C2925F /* TBAbstractStatusFactory.m in Sources */,
 				599D543716745D1100C2925F /* MBProgressStatusFactory.m in Sources */,
+				599D54411675262000C2925F /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
